@@ -81,7 +81,7 @@ Instalar OpenSSH en todos los sistemas
  <pre><code> ssh-keygen -t rsa </code></pre> 
   **##crear un directorio .ssh en el cliente**
   <pre><code> ssh mpiuser@client1 mkdir -p .ssh </code></pre> 
-  Escrbir yes cuando lo solicite
+  Escribir yes cuando lo solicite
   
   Escribir el password del client1
   
@@ -129,10 +129,12 @@ Instalar el servidor NFS en la master para montar la carpeta compartida
 **#Reiniciar el sistema cliente**
 **#Agregar la entrada a la tabla del sistema de archivos**
 <pre><code> cat /etc/fstab </code></pre>
+
 #MPI CLUSTER SETUP
 
 master:/home/mpiuser/storage /home/mpiuser/storage nfs
-#### Paso 5 Ejecutar el programa
+
+#### Paso 6 Ejecutar el programa
 Cambiar el directorio en el master node
 <pre><code> cd storage/ </code></pre>
 <pre><code> pwd
