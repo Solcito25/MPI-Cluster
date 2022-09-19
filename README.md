@@ -108,10 +108,10 @@ Instalar el servidor NFS en la master para montar la carpeta compartida
 
 **#Crear una carpeta compartida**
 <pre><code> mkdir storage </code></pre>
-**#Crear una entrada en  /etc/exports **
+**#Crear una entrada en  /etc/exports**
 <pre><code> cat /etc/exports
 /home/mpiuser/storage *(rw,sync,no_root_squash,no_subtree_check) </code></pre>
-**#Ejecutar el comando después de cualquier cambio en  /etc/exports **
+**#Ejecutar el comando después de cualquier cambio en  /etc/exports**
 <pre><code> exportfs -a </code></pre>
 **#Reiniciar el servidor NFS**
 <pre><code> sudo service nfs-kernel-server restart</code></pre>
