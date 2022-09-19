@@ -21,6 +21,7 @@ O instalar OpenMPI
 <pre><code> sudo apt-get install libopenmpi-dev openmpi-bin openmpi-doc </code></pre>
 #### Paso 2 Configurar el Host file
 Aquí asignaremos las direcciones IP a los nombres de host para que no tengamos que escribir las direcciones IP una y otra vez.
+
 *Master*:
 <pre><code> sudo nano /etc/hosts </code></pre>
 127.0.0.1 localhost
@@ -79,7 +80,7 @@ Instalar OpenSSH en todos los sistemas
  <pre><code> su -mpiuser </code></pre> 
  **#generacion de key**
  <pre><code> ssh-keygen -t rsa </code></pre> 
-  **##crear un directorio .ssh en el cliente**
+  **#crear un directorio .ssh en el cliente**
   <pre><code> ssh mpiuser@client1 mkdir -p .ssh </code></pre> 
   Escribir yes cuando lo solicite
   
